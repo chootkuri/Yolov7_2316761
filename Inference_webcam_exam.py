@@ -1,7 +1,7 @@
 # Inference for ONNX model
-
+import tensorflow.compat.v2 as tf
+tf.disable_v2_behavior() 
 import cv2
-import tensorflow as tf
 cuda = True
 w = "yolov7-tiny.onnx"
 #img = cv2.imread('horses.jpg')  # image-based execute!
